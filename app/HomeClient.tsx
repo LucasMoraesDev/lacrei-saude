@@ -1,4 +1,6 @@
 "use client";
+import React from "react";
+"use client";
 
 import React, { useState, useRef } from "react";
 import Link from "next/link";

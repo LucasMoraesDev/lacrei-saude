@@ -1,4 +1,6 @@
 "use client";
+import React from "react";
+"use client";
 
 import React from "react";
 import styled, { css, keyframes } from "styled-components";
