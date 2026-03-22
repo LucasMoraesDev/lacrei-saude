@@ -1,6 +1,6 @@
 "use client";
 
-import React, { type ReactNode, type ReactNode } from "react";
+import React, { type ReactNode } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { colors, typography, borderRadius, transitions, shadows } from "@/styles/tokens";
 
