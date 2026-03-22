@@ -37,7 +37,7 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: {
-  children: string | null | undefined | JSX.Element | JSX.Element[];
+  children: JSX.Element | JSX.Element[] | null;
 }) {
   return (
     <html lang="pt-BR">
