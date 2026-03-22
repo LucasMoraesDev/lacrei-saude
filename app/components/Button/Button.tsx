@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { type ReactNode, type ReactNode } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { colors, typography, borderRadius, transitions, shadows } from "@/styles/tokens";
 
@@ -12,8 +12,8 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   variant?: ButtonVariant;
   size?: ButtonSize;
   isLoading?: boolean;
-  leftIcon?: React.ReactNode;
-  rightIcon?: React.ReactNode;
+  leftIcon?: ReactNode;
+  rightIcon?: ReactNode;
   fullWidth?: boolean;
   as?: "button" | "a";
   href?: string;
