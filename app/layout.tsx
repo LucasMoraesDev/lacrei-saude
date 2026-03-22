@@ -1,4 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import type { ReactNode } from "react";          // ← adicionar isso
+import StyledComponentsRegistry from "./providers/StyledComponentsRegistry";
+import GlobalStylesWrapper from "./providers/GlobalStylesWrapper";
+import type { Metadata, Viewport } from "next";
 import StyledComponentsRegistry from "./providers/StyledComponentsRegistry";
 import GlobalStylesWrapper from "./providers/GlobalStylesWrapper";
 
@@ -34,7 +38,7 @@ export const viewport: Viewport = {
   themeColor: "#22C55E",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {  // ← trocar React.ReactNode
   return (
     <html lang="pt-BR">
       <head>
