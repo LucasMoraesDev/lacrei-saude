@@ -1,14 +1,7 @@
 const React = require("react");
-
-function Link({ children, href, "aria-label": ariaLabel, ...props }) {
-  return React.createElement(
-    "a",
-    { href, "aria-label": ariaLabel, ...props },
-    children
-  );
+function Link({ children, href, ...props }: any) {
+  return React.createElement("a", { href, ...props }, children);
 }
-
 Link.displayName = "Link";
-
 module.exports = Link;
 module.exports.default = Link;
