@@ -1,3 +1,7 @@
+import React from "react";
+import type { Metadata, Viewport } from "next";
+import StyledComponentsRegistry from "./providers/StyledComponentsRegistry";
+import GlobalStylesWrapper from "./providers/GlobalStylesWrapper";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";          // ← adicionar isso
 import StyledComponentsRegistry from "./providers/StyledComponentsRegistry";
