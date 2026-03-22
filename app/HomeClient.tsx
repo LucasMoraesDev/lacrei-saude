@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, FormEvent } from "react";
 import Link from "next/link";
 import styled, { keyframes, css } from "styled-components";
 import { colors, typography, borderRadius, shadows, transitions } from "@/styles/tokens";
@@ -510,7 +510,7 @@ export default function HomeClient() {
   const [submitted, setSubmitted] = useState(false);
   const formRef = useRef<HTMLDivElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (email) {
       setSubmitted(true);

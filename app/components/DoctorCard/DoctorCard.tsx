@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, FC } from "react";
 import styled, { keyframes, css } from "styled-components";
 import { colors, typography, borderRadius, shadows, transitions } from "@/styles/tokens";
 import Button from "../Button/Button";
@@ -250,7 +250,7 @@ interface DoctorCardProps {
   animationDelay?: number;
 }
 
-const DoctorCard: React.FC<DoctorCardProps> = ({ profissional, animationDelay = 0 }) => {
+const DoctorCard: FC<DoctorCardProps> = ({ profissional, animationDelay = 0 }) => {
   const [agendado, setAgendado] = useState(false);
 
   const handleAgendar = () => {

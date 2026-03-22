@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React , { FC } from "react";
 import styled from "styled-components";
 import { colors, typography } from "@/styles/tokens";
 
@@ -159,7 +159,7 @@ const PrideBar = styled.div`
   background: linear-gradient(90deg,#e40303 0%,#ff8c00 16.66%,#ffed00 33.33%,#008026 50%,#004dff 66.66%,#750787 83.33%,#e40303 100%);
 `;
 
-const Footer: React.FC = () => {
+const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (

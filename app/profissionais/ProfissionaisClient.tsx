@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect, useCallback, useRef, RefObject } from "react";
 import styled, { keyframes, css } from "styled-components";
 import { colors, typography, borderRadius, shadows, transitions } from "@/styles/tokens";
 import Header from "@/app/components/Header/Header";
@@ -612,7 +612,7 @@ export default function ProfissionaisClient() {
               <ResultsCount
                 aria-live="polite"
                 aria-atomic="true"
-                ref={liveRef as React.RefObject<HTMLParagraphElement>}
+                ref={liveRef as RefObject<HTMLParagraphElement>}
               >
                 {loading ? (
                   "Buscando..."

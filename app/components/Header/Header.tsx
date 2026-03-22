@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, FC } from "react";
 import { usePathname } from "next/navigation";
 import styled, { css, keyframes } from "styled-components";
 import { colors, typography, shadows, transitions } from "@/styles/tokens";
@@ -160,7 +160,7 @@ const navItems = [
   { label: "Sobre", href: "/#sobre" },
 ];
 
-const Header: React.FC = () => {
+const Header: FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
