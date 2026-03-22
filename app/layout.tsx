@@ -2,13 +2,6 @@ import React from "react";
 import type { Metadata, Viewport } from "next";
 import StyledComponentsRegistry from "./providers/StyledComponentsRegistry";
 import GlobalStylesWrapper from "./providers/GlobalStylesWrapper";
-import type { Metadata, Viewport } from "next";
-import type { ReactNode } from "react";          // ← adicionar isso
-import StyledComponentsRegistry from "./providers/StyledComponentsRegistry";
-import GlobalStylesWrapper from "./providers/GlobalStylesWrapper";
-import type { Metadata, Viewport } from "next";
-import StyledComponentsRegistry from "./providers/StyledComponentsRegistry";
-import GlobalStylesWrapper from "./providers/GlobalStylesWrapper";
 
 export const metadata: Metadata = {
   title: {
@@ -17,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     "Encontre profissionais de saúde capacitados para atender a comunidade LGBTQIA+. Segurança, respeito e cuidado em cada consulta.",
-  keywords: ["saúde LGBTQIA+", "profissionais de saúde", "consulta médica", "saúde trans", "Lacrei Saúde"],
+  keywords: ["saúde LGBTQIA+", "profissionais de saúde", "saúde trans", "Lacrei Saúde"],
   authors: [{ name: "Lacrei Saúde" }],
   creator: "Lacrei Saúde",
   openGraph: {
@@ -42,7 +35,7 @@ export const viewport: Viewport = {
   themeColor: "#22C55E",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {  // ← trocar React.ReactNode
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
