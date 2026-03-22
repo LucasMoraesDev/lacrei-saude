@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import type { ReactNode } from "react";
 import StyledComponentsRegistry from "./providers/StyledComponentsRegistry";
 import GlobalStylesWrapper from "./providers/GlobalStylesWrapper";
 
@@ -19,8 +18,7 @@ export const metadata: Metadata = {
     url: "https://lacrei.health",
     siteName: "Lacrei Saúde",
     title: "Lacrei Saúde – Saúde LGBTQIA+ com segurança e respeito",
-    description:
-      "Encontre profissionais de saúde capacitados para atender a comunidade LGBTQIA+.",
+    description: "Encontre profissionais de saúde capacitados para atender a comunidade LGBTQIA+.",
   },
   twitter: {
     card: "summary_large_image",
@@ -36,16 +34,16 @@ export const viewport: Viewport = {
   themeColor: "#22C55E",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="pt-BR">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
