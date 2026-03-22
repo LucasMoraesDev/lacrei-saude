@@ -36,9 +36,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: string | null | undefined | JSX.Element | JSX.Element[];
+}) {
   return (
     <html lang="pt-BR">
       <head>
